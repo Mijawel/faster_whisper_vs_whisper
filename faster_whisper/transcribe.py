@@ -83,7 +83,8 @@ class WhisperModel:
             )
 
         self.feature_extractor = FeatureExtractor()
-        self.tokenizer = tokenizers.Tokenizer.from_pretrained("openai/whisper-tiny")
+        #self.tokenizer = tokenizers.Tokenizer.from_pretrained("openai/whisper-tiny")
+        self.tokenizer = tokenizers.Tokenizer.from_file("whisper_tokenizer.json")
         self.eot_id = self.tokenizer.token_to_id("<|endoftext|>")
         self.timestamp_begin_id = self.tokenizer.token_to_id("<|notimestamps|>") + 1
         self.input_stride = 2
