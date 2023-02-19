@@ -1,0 +1,5 @@
+av==10.*
+ctranslate2>=3.5.1,<4
+tokenizers==0.13.*
+git+https://github.com/openai/whisper.git@9f70a352f9f8630ab3aa0d06af5cb9532bd8c21d
+ffmpeg
